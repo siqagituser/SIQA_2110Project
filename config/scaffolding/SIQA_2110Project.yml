@@ -10,16 +10,16 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
-- name: TPP_services_in_FCS
-  gitServerName: SIQA_kvv_wm_io
-  gitUrl: https://github.webmethods.io/kvv
-  gitUsername: kvv
-  gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
   gitServerName: siqagituser
   gitUrl: https://github.com/vijetadixit
   gitUsername: siqagituser
   gitBranch: Test
+- name: TPP_services_in_FCS
+  gitServerName: SIQA_kvv_wm_io
+  gitUrl: https://github.webmethods.io/kvv
+  gitUsername: kvv
+  gitBranch: one_service
 services:
 - serviceName: project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
