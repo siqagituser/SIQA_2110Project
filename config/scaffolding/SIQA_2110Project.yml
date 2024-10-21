@@ -14,7 +14,7 @@ packages:
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/kvv
   gitUsername: kvv
-  gitBranch: main
+  gitBranch: branchTest
 services:
 - serviceName: project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
