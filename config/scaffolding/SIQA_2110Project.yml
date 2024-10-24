@@ -23,22 +23,6 @@ packages:
   gitUsername: kvv
   gitBranch: main
 services:
-- serviceName: project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_3
-  packages:
-  - name: SIQA_2110Project
-    version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
-  - name: SIQA_OriginTest_OnPremAssets
-    version: "1.0"
-- serviceName: project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
-  packages:
-  - name: SIQA_2110Project
-    version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
-  - name: SIQA_OriginTest_OnPremAssets
-    version: "1.0"
 - serviceName: project.siqa_2110.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_2110Project
@@ -47,7 +31,7 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
-- serviceName: project.siqa_2110.integrations:Sum
+- serviceName: project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test
   packages:
   - name: SIQA_2110Project
     version: "1.0"
@@ -55,14 +39,6 @@ services:
     version: "1.0"
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
-- serviceName: pub.math:addInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1969
-- serviceName: pub.flow:debugLog
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1969
 configurationVariables:
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.expireTimeout
   : "1000"
