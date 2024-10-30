@@ -21,7 +21,7 @@ packages:
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/kvv
   gitUsername: kvv
-  gitBranch: one_service
+  gitBranch: main
 services:
 - serviceName: project.siqa_2110.integrations:SIQAAdapterFlow
   packages:
@@ -62,10 +62,10 @@ configurationVariables:
   : "10"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.dbType
   : MSSQL
-  ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
-  : "10"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
   : vmiboint01
+  ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
