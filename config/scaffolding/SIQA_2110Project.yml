@@ -10,18 +10,18 @@ packages:
 - name: WmJDBCAdapter
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
-- name: SIQA_OriginTest_OnPremAssets
-  version: "1.0"
-  gitServerName: siqagituser
-  gitUrl: https://github.com/vijetadixit
-  gitUsername: siqagituser
-  gitBranch: Test
 - name: TPP_services_in_FCS
   version: "1.0"
   gitServerName: SIQA_kvv_wm_io
   gitUrl: https://github.webmethods.io/kvv
   gitUsername: kvv
   gitBranch: main
+- name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
+  gitServerName: siqagituser
+  gitUrl: https://github.com/vijetadixit
+  gitUsername: siqagituser
+  gitBranch: Test2
 services:
 - serviceName: project.siqa_2110.integrations:SIQAAdapterFlow
   packages:
@@ -62,10 +62,10 @@ configurationVariables:
   : "10"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.dbType
   : MSSQL
-  ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
-  : vmiboint01
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
+  : vmiboint01
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.SIQA_2110Project.project.siqa_2110.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.networkProtocol
